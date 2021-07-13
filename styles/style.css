@@ -244,13 +244,19 @@ body {
 --------------------*/
 
 @media only screen and (max-width:688px) {
+    body{
+        width:100%;
+        overflow-x: hidden;
+    }
     .container {
         width: 100%;
-        padding:0px 20px;
 }
     /* header styling start  */
     .header__menu{
         display: none;
+    }
+    .header__wrapper {
+        padding: 42px 20px;
     }
     /* header styling end  */
 
@@ -258,6 +264,7 @@ body {
     .home__section__wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+            padding-left: 20px;
     }
 
     .home__section__banner__image__wrapper {
@@ -290,7 +297,6 @@ body {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
         place-items: center;
-        padding-right: 31px;
     }
     /* players styling end  */
 }
