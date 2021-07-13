@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 body {
   margin: 0px;
@@ -200,28 +201,27 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.player__image__Wrapper img:hover{
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
+.player__image__Wrapper img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
 #player__info__title {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 40px;
-    
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
 }
-#player__info__title a{
-    color: #18191F;
-    text-decoration: none;
+#player__info__title a {
+  color: #18191f;
+  text-decoration: none;
 }
-#player__info__title a:hover{
-    text-decoration: underline;
+#player__info__title a:hover {
+  text-decoration: underline;
 }
 .player__info p {
   font-family: Poppins;
@@ -232,3 +232,68 @@ body {
   color: #6c6c6c;
 }
 /* players styling end  */
+
+
+
+
+
+
+
+/* ------------------
+    Media Quaries 
+--------------------*/
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+        padding:0px 20px;
+}
+    /* header styling start  */
+    .header__menu{
+        display: none;
+    }
+    /* header styling end  */
+
+    /* homepage styling start  */
+    .home__section__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home__section__banner__image__wrapper {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 86px;
+        padding-top: 20px;
+    }
+    .home__section__banner__image{
+        width:329px;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
+.home__section__heading{
+    font-size: 36px;
+    line-height: 50px;
+}
+#watch__button{
+    margin-bottom: 60px;
+}
+    /* homepage styling end  */
+
+    /* players styling start  */
+
+    .players__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        place-items: center;
+        padding-right: 31px;
+    }
+    /* players styling end  */
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+}
