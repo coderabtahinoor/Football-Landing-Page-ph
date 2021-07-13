@@ -50,7 +50,11 @@ body {
   line-height: 24px;
   margin-right: 36px;
 }
-
+.menu__icon{
+    font-size:24px;
+    color:white;
+    display: none;
+}
 .common__button {
   width: 123px;
   height: 44px;
@@ -257,6 +261,11 @@ body {
     }
     .header__wrapper {
         padding: 42px 20px;
+    }
+    .menu__icon {
+        display: flex;
+        flex-grow: 1;
+        
     }
     /* header styling end  */
 
