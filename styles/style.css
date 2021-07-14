@@ -50,10 +50,10 @@ body {
   line-height: 24px;
   margin-right: 36px;
 }
-.menu__icon{
-    font-size:24px;
-    color:white;
-    display: none;
+.menu__icon {
+  font-size: 24px;
+  color: white;
+  display: none;
 }
 .common__button {
   width: 123px;
@@ -237,43 +237,107 @@ body {
 }
 /* players styling end  */
 
-
-
-
-
-
-
 /* ------------------
     Media Quaries 
 --------------------*/
 
-@media only screen and (max-width:688px) {
-    body{
-        width:100%;
+@media only screen and (max-width: 688px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+  }
+  /* header styling start  */
+  .header__menu {
+    display: none;
+  }
+  .header__wrapper {
+    padding: 42px 20px;
+  }
+  .menu__icon {
+    display: flex;
+    flex-grow: 1;
+  }
+  /* header styling end  */
+
+  /* homepage styling start  */
+  .home__section__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
+  }
+
+  .home__section__banner__image__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 86px;
+    padding-top: 20px;
+  }
+  .home__section__banner__image {
+    width: 329px;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .home__section__heading {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  #watch__button {
+    margin-bottom: 60px;
+  }
+  /* homepage styling end  */
+
+  /* players styling start  */
+
+  .players__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    place-items: center;
+  }
+  /* players styling end  */
+}
+
+
+
+
+@media only screen and (min-width: 688px) and (max-width: 1024px) {
+    body {
+        width: 100%;
         overflow-x: hidden;
     }
+
     .container {
         width: 100%;
-}
-    /* header styling start  */
-    .header__menu{
+    }
+
+    /* header styling start */
+    .header__menu {
         display: none;
     }
+
     .header__wrapper {
         padding: 42px 20px;
     }
+
     .menu__icon {
         display: flex;
         flex-grow: 1;
-        
     }
+
     /* header styling end  */
+
 
     /* homepage styling start  */
     .home__section__wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-            padding-left: 20px;
+        padding-left: 20px;
     }
 
     .home__section__banner__image__wrapper {
@@ -282,33 +346,35 @@ body {
         padding-bottom: 86px;
         padding-top: 20px;
     }
-    .home__section__banner__image{
-        width:329px;
+
+    .home__section__banner__image {
+        width: 400px;
         transform: none;
         -webkit-transform: none;
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
-}
-.home__section__heading{
-    font-size: 36px;
-    line-height: 50px;
-}
-#watch__button{
-    margin-bottom: 60px;
-}
+    }
+
+    .home__section__heading {
+        font-size: 56px;
+        line-height: 70px;
+    }
+
+    #watch__button {
+        margin-bottom: 60px;
+    }
+
     /* homepage styling end  */
 
     /* players styling start  */
 
     .players__wrapper {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 30px;
         place-items: center;
     }
-    /* players styling end  */
-}
 
-@media only screen and (min-width:688px) and (max-width:992px) {
+    /* players styling end  */
 }
